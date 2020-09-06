@@ -1,0 +1,53 @@
+.main-hero {
+    @extend %flex;
+    justify-content: center;
+    align-items: center;
+  
+    height: 600px;
+  
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero.jpg");
+    background-position: center;
+    background-size: cover;
+  
+    background-color: chocolate;
+
+
+
+
+    .hero-item {
+        width: 694px;
+        text-align: center;
+
+        .hero-title {
+          color: #ffffff;
+          font-weight: 900;
+          font-size: 44px;
+          line-height: 1.36;
+          margin-top: 0;
+          margin-bottom: 20px;
+        
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+        }
+        .service {
+          @extend %button;
+        }
+        
+      }
+    
+      
+      
+      
+    
+}
+
+
+  
+  
+
+  

@@ -1,0 +1,57 @@
+.footer-form_container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 570px;
+
+    .footer-form {
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        
+        color: #FFFFFF;
+        }
+
+        .footer-input {
+
+            width: 358px;
+            padding: 13px 16px;
+            color:#fff;
+            background-color: #2F303A;
+            outline: 0;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-sizing: border-box;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          }
+
+          .footer-button{
+            @extend %button;
+            display: inline-flex;
+            align-items: center;
+            padding-left: 29px;
+            margin-left: 12px;
+        
+            .form-button_icon {
+                content:"";
+                width: 24px;
+                height: 24px;
+                margin-left: 10px;
+                
+                background-repeat: no-repeat;
+                background-image: url(/images/send.svg);
+              }
+            
+          }  
+
+          
+  }
+
+  
+  
