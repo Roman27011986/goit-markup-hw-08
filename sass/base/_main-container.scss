@@ -4,6 +4,8 @@
     margin: 0 auto;
     padding: 0;
 
+
+
     .portfolio-header {
       border-bottom: 1px solid #ececec;
     } 
@@ -20,6 +22,14 @@ img{
   }
 
   .portfolio-link{
+    @extend %link-stile-none;
+  }
+
+  .link-nav{
+    @extend %link-stile-none;
+  }
+
+  .auth-nav .link{
     @extend %link-stile-none;
   }
 

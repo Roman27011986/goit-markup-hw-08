@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,11 +13,18 @@
 
 <body class="main-container">
   <!-- хедер -->
-  <header>
+  <header class="page-header">
     <div class="container">
       <nav class="main-nav">
+      
         <a href="./" class="logo">Web<span class="logo-header">Studio</span></a>
-
+        <button type="button" class="menu-button " data-menu-button>
+          <svg class="icon-mobile" width="40px" height="40px" aria-label="переключатель мобильного меню">
+            <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu40px"></use>
+            <use class="icon-cross" href="./images/symbol-defs.svg#icon-close40px"></use>
+          </svg>
+        </button>
+      <div class="menu-container" id="menu-container" data-menu>
         <ul class="site-nav">
           <li class="child">
             <a href="" class="link link-nav current">Студия</a>
@@ -30,24 +36,26 @@
             <a href="" class="link link-nav">Контакты</a>
           </li>
         </ul>
+        <ul class="auth-nav">
+          <li class="child">
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="icon-nav" width="16px" height="12px">
+                <use href="./images/symbol-defs.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a>
+          </li>
+          <li class="child">
+            <a href="tel:+380961111111" class="link">
+              <svg class="icon-nav" width="10px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-tell"></use>
+              </svg>
+              +380961111111</a>
+          </li>
+        </ul>
+      </div>
       </nav>
 
-      <ul class="auth-nav">
-        <li class="child">
-          <a href="mailto:info@devstudio.com" class="link">
-            <svg class="icon-nav" width="16px" height="12px">
-              <use href="./images/symbol-defs.svg#icon-mail"></use>
-            </svg>
-            info@devstudio.com</a>
-        </li>
-        <li class="child">
-          <a href="tel:+380961111111" class="link">
-            <svg class="icon-nav" width="10px" height="16px">
-              <use href="./images/symbol-defs.svg#icon-tell"></use>
-            </svg>
-            +380961111111</a>
-        </li>
-      </ul>
+     
     </div>
   </header>
   <!-- основной контент страницы -->
@@ -488,6 +496,7 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>

@@ -1,20 +1,7 @@
+@import "./util/placeholders";
+@import "./util/variables";
 @import "./base/main-container";
-@import "./utils/placeholders";
-@import "./utils/variables";
-@import "./components/container";
+@import "./base/container";
 @import "./components/page-header";
-@import "./components/logo-header";
-@import "./components/main-nav";
-@import "./components/auth-nav";
-@import "./components/hero";
-@import "./components/advantages";
-@import "./components/profesion";
-@import "./components/comand";
-@import "./components/comand-social-icon";
-@import "./components/regular-customers";
-@import "./components/footer";
-@import "./components/footer-form";
-@import "./components/backdrop";
-@import "./components/portfolio/porfolio-button";
-@import "./components/portfolio/projeckt";
-  
+@import "./components/mobile/index-mobile";
+
