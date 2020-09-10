@@ -2,6 +2,11 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
+    @media screen and (min-width:1200px){
+      padding-top: 94px;
+    padding-bottom: 90px;
+    }
+
     .comand-title {
         text-align: center;
         color: $title-color;
@@ -35,7 +40,11 @@
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
             @media screen and (min-width:768px){
-              
+              width: 226px;
+            }
+
+            @media screen and (min-width:1200px){
+              width: 170px;
             }
 
             .client-svg {
@@ -43,6 +52,14 @@
               transition-property: fill;
               transition-duration: 250ms;
               transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            &:hover {
+              border-color: $hover-color;
+            }
+
+            &:hover .client-svg {
+              fill: $hover-color;
             }
         }
     
