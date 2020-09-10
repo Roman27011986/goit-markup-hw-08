@@ -6,14 +6,17 @@
     justify-content: center;
     
     @media screen and (max-width: 1199px){
+
       flex-direction: column;
     }
 
     @media screen and (max-width: 767px){
+
       align-items: center;
     }
 
     @media screen and (min-width: 768px){
+
       padding-top:0;
       
     }
@@ -21,19 +24,24 @@
     
 
    .child + .child{
+
      margin-top: 16px;
 
      @media screen and (min-width: 768px){
+
       margin-top: 10px;
      }
 
      @media screen and (min-width: 1200px){
+
       margin-top: 0;
       margin-left: 30px;
+
      }
    }
 
     .link{
+
       display: flex;
       align-items: center;
       font-family: Roboto;
@@ -44,6 +52,7 @@
       letter-spacing: 0.02em;
       color: $main-text-color;
       padding: 0;
+
       transition-property: color;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -67,6 +76,7 @@
         
         margin-right: 10px;
         fill: $main-text-color;
+        
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

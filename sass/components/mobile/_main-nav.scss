@@ -12,7 +12,7 @@
   }
 }
   .menu-container{
-
+    align-items: center;
     background-color: #ffffff;
 
       @media screen and (max-width:767px){
@@ -67,6 +67,7 @@
     }
   
 // основная навигация-хедера
+
   .site-nav{
     align-items: center;
     @extend %list;
@@ -75,10 +76,10 @@
 
     @media screen and (min-width:1199px){
       margin-right: 305px;
-      
+     
     }
-    
-    .link {
+     
+      .link {
       
       position: relative;
       letter-spacing: 0.02em;
@@ -116,6 +117,19 @@
       }
     }
 
+    .link-nav{
+
+      @media screen and (max-width:767px){
+        padding-bottom: 8px;
+      }
+
+      @media screen and (min-width:768px){
+        padding-top: 32px;
+        padding-bottom: 29px;
+      }
+      
+    }
+
     .link-nav::after {
       display: block;
       position: absolute;
@@ -123,7 +137,7 @@
       height: 4px;
       width: 100%;
       bottom: 0;
-    
+      
       background: $hover-color;
       border-radius: 2px;
       transform: scale(0);

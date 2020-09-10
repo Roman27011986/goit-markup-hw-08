@@ -1,6 +1,7 @@
 .logo{
   @extend %link-stile-none;
-  
+  padding-top: 24px;
+  padding-bottom: 25px;
   font-family: Raleway;
   color: $hover-color;
   font-weight: bold;
@@ -13,7 +14,7 @@
     padding-bottom: 16px;
   }
 
-  @media screen and (min-width:768px){
+  @media screen and (min-width:768px) and (max-width:1199px){
     padding-top: 26px;
     padding-bottom: 26px;
   }

@@ -1,21 +1,96 @@
 .main-hero {
+
   @extend %flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 600px;
+
   background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/hero.jpg");
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+  url('/images/hero.jpg');
   background-position: center;
-  background-size: cover;
+  background-size:cover;
   background-color: chocolate;
 
-  @media screen and (min-width:1200px){
-    height: 600px;
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (-o-min-device-pixel-ratio: 2/1),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+   
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    
+     url('/images/heroDesc2x.jpg');
+  
+}
+
+// герой мобилка
+
+    @media screen  and (min-width:480px) and (max-width:767px){ 
+    
+      height: 400px;
+
+      background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    
+    url('/images/HeaderMobilimg.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+   
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    
+     url('/images/Header\ img@2x.jpg');
+  
+    }
   }
+
+// герой таблетка
+
+    @media screen  and (min-width:768px) and (max-width:1199px){
+
+     height: 400px;
+
+     background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    
+    url('/images/HeaderTablimg.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+   
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    
+     url('/images/Header\ tablet\ img@2x.jpg');
+  
+    }
+  }
+
+
+
+// заголовок и кнопка в герое
 
   .hero-item{
     width: 360px;
@@ -60,5 +135,5 @@
 
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
+   }
   }
-}

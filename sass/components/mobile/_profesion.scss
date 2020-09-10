@@ -12,6 +12,10 @@
         margin-top: 0;
         line-height: 1.16;
       }
+
+      @media screen and (max-width:1199px){
+        display: none;
+      }
   }
 
   
