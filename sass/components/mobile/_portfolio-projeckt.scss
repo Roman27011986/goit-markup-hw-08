@@ -11,14 +11,6 @@
 
 }
 
-.style-chyld{
-  margin: 15px;
-  @media screen and (min-width:768px){
-    width:calc(50% - 30px) ;
-  }
-}
-
-
 
 .portfolio-style {
   padding: 0;
@@ -32,7 +24,7 @@
 
 .style-chyld {
   position: relative;
-  
+  margin: 15px;
   border: 1px solid #eeeeee;
 
   &:hover {
@@ -44,6 +36,14 @@
 
   &:hover .title-menu_function {
     transform: translateY(0);
+  }
+
+  @media screen and (min-width:768px){
+    width:calc(50% - 30px) ;
+  }
+
+  @media screen and (min-width:1200px){
+    width:calc((100% - 30px * 3) / 3);
   }
 
 }
