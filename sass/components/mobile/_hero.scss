@@ -10,7 +10,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-  url('/images/hero.jpg');
+  url('../images/Hero-1600.jpg');
   background-position: center;
   background-size:cover;
   background-color: chocolate;
@@ -26,7 +26,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
     
-     url('/images/heroDesc2x.jpg');
+     url('../images/Hero-1600-2x.jpg');
   
 }
 
@@ -41,7 +41,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
     
-    url('/images/HeaderMobilimg.jpg');
+    url('../images/Hero-480.jpg');
 
     @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
@@ -54,7 +54,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
     
-     url('/images/Header\ img@2x.jpg');
+     url('../images/Hero-480-2x.jpg');
   
     }
   }
@@ -70,7 +70,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
     
-    url('/images/HeaderTablimg.jpg');
+    url('../images/Hero-768.jpg');
 
     @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
@@ -83,7 +83,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
     
-     url('/images/Header\ tablet\ img@2x.jpg');
+     url('../images/Hero-768-2x.jpg');
   
     }
   }

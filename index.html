@@ -153,30 +153,34 @@
             <div class="work-container">
               <p class="work-content">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
             </div>
-            <img srcset="./images/img.jpg,
-                         ./images/img2x.jpg"
+            <img srcset="./images/DesctopAnnexes.jpg 1x,
+                         ./images/DesctopAnnexes-2x.jpg 2x"
 
                          src="./images/img.jpg"  
-                         alt="альтернативный текст" />
+                         alt="альтернативный текст"
+                         width="370" />
           </li>
           <li class="work-item">
             <div class="work-container">
               <p class="work-content">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
             </div>
-            <img srcset="./images/img2.jpg,
-                         ./images/img2.2x.jpg" 
+            <img srcset="./images/MobileAnnexes.jpg 1x,
+                         ./images/MobileAnnexes-2x.jpg 2x" 
 
                          src="./images/img2.jpg"  
-                         alt="альтернативный текст" />
+                         alt="альтернативный текст"
+                         width="370" />
           </li>
           <li class="work-item">
             <div class="work-container">
               <p class="work-content">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
             </div>
-            <img srcset="./images/img3.jpg,
-                         ./images/img3.2x.jpg" 
+            <img srcset="./images/DesignSolutions.jpg 1x,
+                         ./images/DesignSolutions-2x.jpg 2x" 
+
                          src="./images/img3.jpg"  
-                         alt="альтернативный текст" />
+                         alt="альтернативный текст"
+                         width="370" />
           </li>
         </ul>
       </div>
@@ -191,13 +195,30 @@
         <ul class="team">
           <li class="photo">
 
-            <img srcset="./images/Igor.jpg 1x,
-                         ./images/Igor2x.jpg 2x"
+            <picture>
 
-                          src="./images/Igor.jpg"  
-                          alt="альтернативный текст"
-                          width="450" />
+              <source srcset="./images/ProductDesinger-450.jpg 450w,
+                              ./images/ProductDesinger-450-2x.jpg 900w"
 
+                       media="(max-width:767px)"
+                       sizes="(min-width:480px) 450px,100vw">
+
+              <source srcset="./images/ProductDesinger-354.jpg 354w,
+                              ./images/ProductDesinger-354-2x.jpg 708w"
+
+                       media="(min-width:768px) (max-width:1199px)"
+                       sizes="(min-width:768px) 354px,100vw">
+
+              <source srcset="./images/ProductDesinger-270.jpg 270w,
+                              ./images/ProductDesinger-270-2x.jpg 540w"
+
+                       media="(min-width:1200px)"
+                       sizes="(min-width:1200px) 450px,100vw">
+
+               <img src="./images/ProductDesinger-354.jpg"
+                       alt="альтернативный текст"/>
+
+           </picture>
             <h3 class="comand-initials">Игорь Демьяненко</h3>
             <p class="icon-item">Product Designer</p>
 
@@ -230,12 +251,31 @@
             </ul>
           </li>
           <li class="photo">
-            <img srcset="./images/Olga.jpg 1x,
-                         ./images/Olga2x.jpg 2x" 
+            
+            <picture>
 
-                         src="./images/Olga.jpg" 
-                         alt="альтернативный текст"
-                         width="450"/>
+              <source srcset="./images/FrontendDeveloper-450.jpg 450w,
+                              ./images/FrontendDeveloper-450-2x.jpg 900w"
+
+                       media="(max-width:767px)"
+                       sizes="(min-width:480px) 450px,100vw">
+
+              <source srcset="./images/FrontendDeveloper-354.jpg 354w,
+                              ./images/FrontendDeveloper-354-2x.jpg 708w"
+
+                       media="(min-width:768px) (max-width:1199px)"
+                       sizes="(min-width:768px) 354px,100vw">
+
+              <source srcset="./images/FrontendDeveloper-270.jpg 270w,
+                              ./images/FrontendDeveloper-270-2x.jpg 540w"
+
+                       media="(min-width:1200px)"
+                       sizes="(min-width:1200px) 450px,100vw">
+
+               <img src="./images/FrontendDeveloper-354.jpg"
+                       alt="альтернативный текст"/>
+
+           </picture>
 
             <h3 class="comand-initials">Ольга Репина</h3>
             <p class="icon-item">Frontend Developer</p>
@@ -268,12 +308,30 @@
             </ul>
           </li>
           <li class="photo">
-            <img srcset="./images/Nickolai.jpg 1x,
-                         ./images/Nickolai2x.jpg 2x"
+            <picture>
 
-                         src="./images/Nickolai.jpg"  
-                         alt="альтернативный текст" 
-                         width="450"/>
+              <source srcset="./images/Marketing-450.jpg 450w,
+                              ./images/Marketing-450-2x.jpg 900w"
+
+                       media="(max-width:767px)"
+                       sizes="(min-width:480px) 450px,100vw">
+
+              <source srcset="./images/Marketing-354.jpg 354w,
+                              ./images/Marketing-354-2x.jpg 708w"
+
+                       media="(min-width:768px) (max-width:1199px)"
+                       sizes="(min-width:768px) 354px,100vw">
+
+              <source srcset="./images/Marketing-270.jpg 270w,
+                              ./images/Marketing-270-2x.jpg 540w"
+
+                       media="(min-width:1200px)"
+                       sizes="(min-width:1200px) 450px,100vw">
+
+               <img src="./images/Marketing-354.jpg"
+                       alt="альтернативный текст"/>
+
+           </picture>
             <h3 class="comand-initials">Николай Тарасов</h3>
             <p class="icon-item">Marketing</p>
             <ul class="comand-link">
@@ -305,12 +363,30 @@
             </ul>
           </li>
           <li class="photo">
-            <img srcset="./images/Mikhail.jpg 1x,
-                         ./images/Mikhail2x.jpg 2x"
+            <picture>
 
-                          src="./images/Mikhail.jpg"
-                          alt="альтернативный текст" 
-                          width="450"/>
+              <source srcset="./images/UiDesigner-450.jpg 450w,
+                              ./images/UiDesigner-450-2x.jpg 900w"
+
+                       media="(max-width:767px)"
+                       sizes="(min-width:480px) 450px,100vw">
+
+              <source srcset="./images/UiDesigner-354.jpg 354w,
+                              ./images/UiDesigner-354-2x.jpg 708w"
+
+                       media="(min-width:768px) (max-width:1199px)"
+                       sizes="(min-width:768px) 354px,100vw">
+
+              <source srcset="./images/UiDesigner-270.jpg 270w,
+                              ./images/UiDesigner-270-2x.jpg 540w"
+
+                       media="(min-width:1200px)"
+                       sizes="(min-width:1200px) 450px,100vw">
+
+               <img src="./images/UiDesigner-354.jpg"
+                       alt="альтернативный текст"/>
+
+           </picture>
             <h3 class="comand-initials">Михаил Ермаков</h3>
             <p class="icon-item">UI Designer</p>
             <ul class="comand-link">
