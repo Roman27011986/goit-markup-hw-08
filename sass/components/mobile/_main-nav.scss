@@ -14,6 +14,7 @@
   .menu-container{
     align-items: center;
     background-color: #ffffff;
+    z-index: 1;
 
       @media screen and (max-width:767px){
       border-top: 1px solid #ECECEC;

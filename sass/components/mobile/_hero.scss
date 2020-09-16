@@ -1,8 +1,9 @@
 .main-hero {
-
+  min-width: 320px;
   @extend %flex;
   justify-content: center;
   align-items: center;
+  
   height: 600px;
 
   background-image: linear-gradient(
@@ -93,7 +94,7 @@
 // заголовок и кнопка в герое
 
   .hero-item{
-    width: 360px;
+    width: 320px;
     text-align: center;
 
     @media screen and (min-width:1200px){
