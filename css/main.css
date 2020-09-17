@@ -847,6 +847,12 @@ textarea {
   margin-top: 16px;
 }
 
+@media screen and (min-width: 1200px) {
+  .comand .team .photo .comand-link {
+    padding-bottom: 30px;
+  }
+}
+
 .comand .team .photo .icon-about_as {
   fill: #afb1b8;
   -webkit-transition-property: fill;
