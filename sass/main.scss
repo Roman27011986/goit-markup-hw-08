@@ -3,5 +3,16 @@
 @import "./base/main-container";
 @import "./base/container";
 @import "./components/page-header";
-@import "./components/mobile/index-mobile";
-
+@import "./components/Front-page/main-nav";
+@import "./components/Front-page/logo-header";
+@import "./components/Front-page/auth-nav";
+@import "./components/Front-page/hero";
+@import "./components/Front-page/about-us";
+@import "./components/Front-page/profesion";
+@import "./components/Front-page/comand";
+@import "./components/Front-page/regular-customers";
+@import "./components/Front-page/footer";
+@import "./components/Front-page/footer-form";
+@import "./components/Front-page/backdrop";
+@import "./components/portfolio/porfolio-button";
+@import "./components/portfolio/portfolio-projeckt";
