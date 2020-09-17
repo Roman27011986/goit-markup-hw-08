@@ -5,20 +5,23 @@
   align-items: center;
   width: 100%;
   
+
   .icon-mobile{
     @media screen and (min-width: 768px) {
       display: none;
     }
   }
 }
+
   .menu-container{
     align-items: center;
     background-color: #ffffff;
+    
     z-index: 1;
-
-      @media screen and (max-width:767px){
+    
+    @media screen and (max-width:767px){
+        
       border-top: 1px solid #ECECEC;
-      transform: rotate(-0.16deg);
       box-shadow:0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
       padding-top: 58px;
       padding-bottom: 82px;
@@ -26,9 +29,10 @@
 
     &.is-open{
       @media screen and (max-width:767px){
-      display: block;
+        display: block;
       }
     }
+    
 
     @media screen and (max-width:767px){
       display: none;
@@ -66,6 +70,8 @@
     .menu-button.is-open .icon-menu{
       display: none;
     }
+
+    
   
 // основная навигация-хедера
 

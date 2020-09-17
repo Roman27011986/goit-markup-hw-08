@@ -115,8 +115,6 @@ textarea {
 @media screen and (max-width: 767px) {
   .menu-container {
     border-top: 1px solid #ECECEC;
-    -webkit-transform: rotate(-0.16deg);
-            transform: rotate(-0.16deg);
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     padding-top: 58px;
@@ -1191,7 +1189,6 @@ textarea {
 }
 
 .footer-input {
-  width: 100%;
   margin-bottom: 20px;
   padding: 13px 16px;
   color: #fff;
@@ -1277,7 +1274,6 @@ textarea {
 .backdrop.is-hidden .modal {
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
-  opacity: 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1288,23 +1284,14 @@ textarea {
 }
 
 .modal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  padding: 40px;
-  background: #ffffff;
-  width: 100%;
+  padding: 40px 10px 40px 10px;
   -webkit-transform: scale(1);
           transform: scale(1);
-  opacity: 1;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1314,12 +1301,14 @@ textarea {
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     position: relative;
+    padding: 40px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
     position: absolute;
+    padding: 40px;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
     width: 528px;
