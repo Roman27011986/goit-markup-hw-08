@@ -85,9 +85,61 @@
       margin-right: 305px;
      
     }
+
+    &__item:nth-child(-n + 2){
+      margin-bottom:40px;
+  
+      @media screen and (min-width: 768px){
+     
+        margin-bottom:0;
+      }
+    }
+
+    &__item +  &__item{
+      @media screen and (min-width: 768px){
+        margin-left: 50px;
+        
+      }
+    }
+
+    
+    &__link{
+
+      @media screen and (max-width:767px){
+        padding-bottom: 8px;
+      }
+
+      @media screen and (min-width:768px){
+        padding-top: 32px;
+        padding-bottom: 29px;
+      }
+      
+    }
+
+    &__link::after {
+      display: block;
+      position: absolute;
+      content: "";
+      height: 4px;
+      width: 100%;
+      bottom: 0;
+      
+      background: $hover-color;
+      border-radius: 2px;
+      transform: scale(0);
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+     
+    }
+    
+    
+    &__link:hover::after,
+    &__link:focus::after {
+      transform: scaleX(1);
+    }
      
       .link {
-      
+      @extend %link-stile-none;
       position: relative;
       letter-spacing: 0.02em;
       font-style: normal;
@@ -124,62 +176,16 @@
       }
     }
 
-    .link-nav{
-
-      @media screen and (max-width:767px){
-        padding-bottom: 8px;
-      }
-
-      @media screen and (min-width:768px){
-        padding-top: 32px;
-        padding-bottom: 29px;
-      }
-      
-    }
-
-    .link-nav::after {
-      display: block;
-      position: absolute;
-      content: "";
-      height: 4px;
-      width: 100%;
-      bottom: 0;
-      
-      background: $hover-color;
-      border-radius: 2px;
-      transform: scale(0);
-      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-     
-    }
-    
-    
-    .link-nav:hover::after,
-    .link-nav:focus::after {
-      transform: scaleX(1);
-    }
    
 
-    .child:nth-child(-n + 2){
-      margin-bottom:40px;
-  
-      @media screen and (min-width: 768px){
-     
-        margin-bottom:0;
-      }
-    }
+   
 
     @media screen and (max-width: 767px){
       width: 100%;
       flex-direction: column;
     }
 
-    .child + .child{
-      @media screen and (min-width: 768px){
-        margin-left: 50px;
-        
-      }
-    }
+    
  }
   
 
