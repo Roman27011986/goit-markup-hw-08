@@ -8,6 +8,12 @@
   font-style: normal;
   letter-spacing: 0.03em;
 
+  .page-header__logo--black{
+
+    @include logo($title-color);
+    
+  }
+
   @media screen and (max-width:767px){
     padding-top: 16px;
     padding-bottom: 16px;
@@ -29,8 +35,7 @@
     line-height: 1.19;  
 }
 
-.page-header__logo--black{
-    color: #000000;
-}
+
+
 
 }

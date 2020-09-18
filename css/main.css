@@ -567,6 +567,10 @@ textarea {
   letter-spacing: 0.03em;
 }
 
+.logo .page-header__logo--black {
+  color: #212121;
+}
+
 @media screen and (max-width: 767px) {
   .logo {
     padding-top: 16px;
@@ -593,10 +597,6 @@ textarea {
     font-size: 26px;
     line-height: 1.19;
   }
-}
-
-.logo .page-header__logo--black {
-  color: #000000;
 }
 
 .auth-nav {
