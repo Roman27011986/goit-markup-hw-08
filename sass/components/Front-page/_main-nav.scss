@@ -6,7 +6,7 @@
   width: 100%;
   
 
-  .icon-mobile{
+  .menu-button__icon{
     @media screen and (min-width: 768px) {
       display: none;
     }
@@ -56,21 +56,22 @@
       border: 0;
       padding: 0;
       outline: 0;
-      
-    }
 
-    .menu-button .icon-cross{
+    & .menu-button__icon--cross{
       display: none;
     }
 
-    .menu-button.is-open .icon-cross{
+    &.is-open .menu-button__icon--cross{
       display: block;
     }
 
-    .menu-button.is-open .icon-menu{
+    &.is-open .menu-button__icon--menu{
       display: none;
     }
 
+    }
+
+    
     
   
 // основная навигация-хедера
@@ -103,7 +104,7 @@
     }
 
     
-    &__link{
+    &__link--active{
 
       @media screen and (max-width:767px){
         padding-bottom: 8px;
@@ -116,7 +117,7 @@
       
     }
 
-    &__link::after {
+    &__link--active::after {
       display: block;
       position: absolute;
       content: "";
@@ -133,8 +134,8 @@
     }
     
     
-    &__link:hover::after,
-    &__link:focus::after {
+    &__link--active:hover::after,
+    &__link--active:focus::after {
       transform: scaleX(1);
     }
      

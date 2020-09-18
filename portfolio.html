@@ -21,49 +21,57 @@
 
             <nav class="main-nav">
 
-                <a href="./" class="logo">Web<span class="logo-header">Studio</span></a>
+                <a href="./" class="logo">Web<span class="page-header__logo--black">Studio</span></a>
+
                 <button type="button" class="menu-button " data-menu-button>
-                    <svg class="icon-mobile" width="40px" height="40px" aria-label="переключатель мобильного меню">
-                      <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu40px"></use>
-                      <use class="icon-cross" href="./images/symbol-defs.svg#icon-close40px"></use>
+
+                    <svg class="menu-button__icon" width="40px" height="40px"
+                        aria-label="переключатель мобильного меню">
+
+                        <use class="menu-button__icon--menu" href="./images/symbol-defs.svg#icon-menu40px"></use>
+                        <use class="menu-button__icon--cross" href="./images/symbol-defs.svg#icon-close40px"></use>
+
                     </svg>
-                  </button>
-                  <div class="menu-container" id="menu-container" data-menu>
-                <ul class="site-nav">
 
-                    <li class="child">
-                        <a href="./index.html" class="link link-nav">Студия</a>
-                    </li>
-                    <li class="child">
-                        <a href="" class="link link-nav current">Портфолио</a>
-                    </li>
-                    <li class="child">
-                        <a href="" class="link link-nav">Контакты</a>
-                    </li>
+                </button>
 
-                </ul>
-            
-            <ul class="auth-nav">
+                <div class="menu-container" id="menu-container" data-menu>
 
-                <li class="child">
-                    <a href="mailto:info@devstudio.com" class="link">
-                        <svg class="icon-nav" width="16px" height="12px">
-                            <use href="./images/symbol-defs.svg#icon-mail"></use>
-                        </svg>info@devstudio.com
-                    </a>
-                </li>
-                <li class="child">
-                    <a href="tel:+380961111111" class="link">
-                        <svg class="icon-nav" width="10px" height="16px">
-                            <use href="./images/symbol-defs.svg#icon-tell"></use>
-                        </svg>+380961111111
-                    </a>
-                </li>
+                    <ul class="site-nav">
 
-            </ul>
+                        <li class="site-nav__item">
+                            <a href="./index.html" class="link site-nav__link">Студия</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="" class="link site-nav__link current">Портфолио</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="" class="link site-nav__link">Контакты</a>
+                        </li>
 
-          </div>
-        </nav>
+                    </ul>
+
+                    <ul class="auth-nav">
+
+                        <li class="auth-nav__item">
+                            <a href="mailto:info@devstudio.com" class="auth-nav__link">
+                                <svg class="auth-nav__icon" width="16px" height="12px">
+                                    <use href="./images/symbol-defs.svg#icon-mail"></use>
+                                </svg>info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="auth-nav__item">
+                            <a href="tel:+380961111111" class="auth-nav__link">
+                                <svg class="auth-nav__icon" width="10px" height="16px">
+                                    <use href="./images/symbol-defs.svg#icon-tell"></use>
+                                </svg>+380961111111
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </nav>
         </div>
 
     </header>
@@ -96,7 +104,7 @@
 
             </ul>
 
-           
+
 
         </div>
 
@@ -121,32 +129,25 @@
                                 </div>
                             </div>
 
-                           <picture>
+                            <picture>
 
-                               <source srcset="./images/Portfolio/Portfolio1-450.jpg 450w,
-                                               ./images/Portfolio/Portfolio1-450-2x.jpg 900w"
+                                <source srcset="./images/Portfolio/Portfolio1-450.jpg 450w,
+                                               ./images/Portfolio/Portfolio1-450-2x.jpg 900w" media="(max-width:767px)"
+                                    sizes="(min-width:480px) 450px,100vw">
 
-                                        media="(max-width:767px)"
-                                        sizes="(min-width:480px) 450px,100vw">
+                                <source srcset="./images/Portfolio/Portfolio1-354.jpg 354w,
+                                               ./images/Portfolio/Portfolio1-354-2x.jpg 708w" media="(min-width:768px)"
+                                    sizes="(min-width:768px) 354px,100vw">
 
-                               <source srcset="./images/Portfolio/Portfolio1-354.jpg 354w,
-                                               ./images/Portfolio/Portfolio1-354-2x.jpg 708w"
-
-                                        media="(min-width:768px)"
-                                        sizes="(min-width:768px) 354px,100vw">
-
-                               <source srcset="./images/Portfolio/Portfolio1-370.jpg 370w,
+                                <source srcset="./images/Portfolio/Portfolio1-370.jpg 370w,
                                                ./images/Portfolio/Portfolio1-370-2x.jpg 740w"
+                                    media="(min-width:1200px)" sizes="(min-width:1200px) 370px,100vw">
 
-                                        media="(min-width:1200px)"
-                                        sizes="(min-width:1200px) 370px,100vw">
-
-                                <img src="./images/Portfolio/Portfolio1-354.jpg"
-                                        alt="альтернативный текст"/>
+                                <img src="./images/Portfolio/Portfolio1-354.jpg" alt="альтернативный текст" />
 
                             </picture>
 
-                           <h2 class="style-title">Технокряк</h2>
+                            <h2 class="style-title">Технокряк</h2>
                             <p class="text-item">Веб-сайт</p>
                         </a>
                     </li>
@@ -159,7 +160,7 @@
                                     <p class="title-menu_item">Технокряк это современная площадка распространения
                                         коронавируса.
                                         Компании используют эту платформу для цифрового шпионажа и атак
-                                   на защищённые сервера конкурентов.</p>
+                                        на защищённые сервера конкурентов.</p>
 
                                 </div>
                             </div>
@@ -168,27 +169,20 @@
 
                                 <source srcset="./images/Portfolio/Portfolio2-450.jpg 450w,
                                                 ./images/Portfolio/Portfolio2-450-2x.jpg 900w"
- 
-                                                media="(max-width:767px)"
-                                                sizes="(min-width:480px) 450px,100vw">
- 
+                                    media="(max-width:767px)" sizes="(min-width:480px) 450px,100vw">
+
                                 <source srcset="./images/Portfolio/Portfolio2-354.jpg 354w,
                                                 ./images/Portfolio/Portfolio2-354-2x.jpg 708w"
- 
-                                                media="(min-width:768px)"
-                                                sizes="(min-width:768px) 354px,100vw">
- 
+                                    media="(min-width:768px)" sizes="(min-width:768px) 354px,100vw">
+
                                 <source srcset="./images/Portfolio/Portfolio2-370.jpg 370w,
                                                 ./images/Portfolio/Portfolio2-370-2x.jpg 740w"
- 
-                                                media="(min-width:1200px)"
-                                                sizes="(min-width:1200px) 370px,100vw">
- 
-                                 <img src="./images/Portfolio/Portfolio2-354.jpg"
-                                         alt="альтернативный текст"/>
- 
-                             </picture>
- 
+                                    media="(min-width:1200px)" sizes="(min-width:1200px) 370px,100vw">
+
+                                <img src="./images/Portfolio/Portfolio2-354.jpg" alt="альтернативный текст" />
+
+                            </picture>
+
 
                             <h2 class="style-title">Постер New Orlean vs Golden Star</h2>
                             <p class="text-item">Дизайн</p>
@@ -210,26 +204,19 @@
 
                             <picture>
 
-                               <source srcset="./images/Portfolio/Portfolio3-450.jpg 450w,
-                                               ./images/Portfolio/Portfolio3-450-2x.jpg 900w"
+                                <source srcset="./images/Portfolio/Portfolio3-450.jpg 450w,
+                                               ./images/Portfolio/Portfolio3-450-2x.jpg 900w" media="(max-width:767px)"
+                                    sizes="(min-width:480px) 450px,100vw">
 
-                                        media="(max-width:767px)"
-                                        sizes="(min-width:480px) 450px,100vw">
+                                <source srcset="./images/Portfolio/Portfolio3-354.jpg 354w,
+                                               ./images/Portfolio/Portfolio3-354-2x.jpg 708w" media="(min-width:768px)"
+                                    sizes="(min-width:768px) 354px,100vw">
 
-                               <source srcset="./images/Portfolio/Portfolio3-354.jpg 354w,
-                                               ./images/Portfolio/Portfolio3-354-2x.jpg 708w"
-
-                                        media="(min-width:768px)"
-                                        sizes="(min-width:768px) 354px,100vw">
-
-                               <source srcset="./images/Portfolio/Portfolio3-370.jpg 370w,
+                                <source srcset="./images/Portfolio/Portfolio3-370.jpg 370w,
                                                ./images/Portfolio/Portfolio3-370-2x.jpg 740w"
+                                    media="(min-width:1200px)" sizes="(min-width:1200px) 370px,100vw">
 
-                                        media="(min-width:1200px)"
-                                        sizes="(min-width:1200px) 370px,100vw">
-
-                                <img src="./images/Portfolio/Portfolio3-354.jpg"
-                                        alt="альтернативный текст"/>
+                                <img src="./images/Portfolio/Portfolio3-354.jpg" alt="альтернативный текст" />
 
                             </picture>
 
@@ -254,26 +241,19 @@
 
                             <picture>
 
-                               <source srcset="./images/Portfolio/Portfolio4-450.jpg 450w,
-                                               ./images/Portfolio/Portfolio4-450-2x.jpg 900w"
+                                <source srcset="./images/Portfolio/Portfolio4-450.jpg 450w,
+                                               ./images/Portfolio/Portfolio4-450-2x.jpg 900w" media="(max-width:767px)"
+                                    sizes="(min-width:480px) 450px,100vw">
 
-                                        media="(max-width:767px)"
-                                        sizes="(min-width:480px) 450px,100vw">
+                                <source srcset="./images/Portfolio/Portfolio4-354.jpg 354w,
+                                               ./images/Portfolio/Portfolio4-354-2x.jpg 708w" media="(min-width:768px)"
+                                    sizes="(min-width:768px) 354px,100vw">
 
-                               <source srcset="./images/Portfolio/Portfolio4-354.jpg 354w,
-                                               ./images/Portfolio/Portfolio4-354-2x.jpg 708w"
-
-                                        media="(min-width:768px)"
-                                        sizes="(min-width:768px) 354px,100vw">
-
-                               <source srcset="./images/Portfolio/Portfolio4-370.jpg 370w,
+                                <source srcset="./images/Portfolio/Portfolio4-370.jpg 370w,
                                                ./images/Portfolio/Portfolio4-370-2x.jpg 740w"
+                                    media="(min-width:1200px)" sizes="(min-width:1200px) 370px,100vw">
 
-                                        media="(min-width:1200px)"
-                                        sizes="(min-width:1200px) 370px,100vw">
-
-                                <img src="./images/Portfolio/Portfolio4-354.jpg"
-                                        alt="альтернативный текст"/>
+                                <img src="./images/Portfolio/Portfolio4-354.jpg" alt="альтернативный текст" />
 
                             </picture>
 
@@ -298,26 +278,19 @@
 
                             <picture>
 
-                               <source srcset="./images/Portfolio/Portfolio5-450.jpg 450w,
-                                               ./images/Portfolio/Portfolio5-450-2x.jpg 900w"
+                                <source srcset="./images/Portfolio/Portfolio5-450.jpg 450w,
+                                               ./images/Portfolio/Portfolio5-450-2x.jpg 900w" media="(max-width:767px)"
+                                    sizes="(min-width:480px) 450px,100vw">
 
-                                        media="(max-width:767px)"
-                                        sizes="(min-width:480px) 450px,100vw">
+                                <source srcset="./images/Portfolio/Portfolio5-354.jpg 354w,
+                                               ./images/Portfolio/Portfolio5-354-2x.jpg 708w" media="(min-width:768px)"
+                                    sizes="(min-width:768px) 354px,100vw">
 
-                               <source srcset="./images/Portfolio/Portfolio5-354.jpg 354w,
-                                               ./images/Portfolio/Portfolio5-354-2x.jpg 708w"
-
-                                        media="(min-width:768px)"
-                                        sizes="(min-width:768px) 354px,100vw">
-
-                               <source srcset="./images/Portfolio/Portfolio5-370.jpg 370w,
+                                <source srcset="./images/Portfolio/Portfolio5-370.jpg 370w,
                                                ./images/Portfolio/Portfolio5-370-2x.jpg 740w"
+                                    media="(min-width:1200px)" sizes="(min-width:1200px) 370px,100vw">
 
-                                        media="(min-width:1200px)"
-                                        sizes="(min-width:1200px) 370px,100vw">
-
-                                <img src="./images/Portfolio/Portfolio5-354.jpg"
-                                        alt="альтернативный текст"/>
+                                <img src="./images/Portfolio/Portfolio5-354.jpg" alt="альтернативный текст" />
 
                             </picture>
 
@@ -344,28 +317,21 @@
 
                                 <source srcset="./images/Portfolio/Portfolio6-450.jpg 450w,
                                                 ./images/Portfolio/Portfolio6-450-2x.jpg 900w"
- 
-                                         media="(max-width:767px)"
-                                         sizes="(min-width:480px) 450px,100vw">
- 
+                                    media="(max-width:767px)" sizes="(min-width:480px) 450px,100vw">
+
                                 <source srcset="./images/Portfolio/Portfolio6-354.jpg 354w,
                                                 ./images/Portfolio/Portfolio6-354-2x.jpg 708w"
- 
-                                         media="(min-width:768px)"
-                                         sizes="(min-width:768px) 354px,100vw">
- 
+                                    media="(min-width:768px)" sizes="(min-width:768px) 354px,100vw">
+
                                 <source srcset="./images/Portfolio/Portfolio6-370.jpg 370w,
                                                 ./images/Portfolio/Portfolio6-370-2x.jpg 740w"
- 
-                                         media="(min-width:1200px)"
-                                         sizes="(min-width:1200px) 370px,100vw">
- 
-                                 <img src="./images/Portfolio/Portfolio6-354.jpg"
-                                         alt="альтернативный текст"/>
- 
-                             </picture>
- 
-                            
+                                    media="(min-width:1200px)" sizes="(min-width:1200px) 370px,100vw">
+
+                                <img src="./images/Portfolio/Portfolio6-354.jpg" alt="альтернативный текст" />
+
+                            </picture>
+
+
                             <h2 class="style-title">Inspiration has no Borders</h2>
                             <p class="text-item">Веб-сайт</p>
                         </a>
@@ -388,28 +354,21 @@
 
                                 <source srcset="./images/Portfolio/Portfolio7-450.jpg 450w,
                                                 ./images/Portfolio/Portfolio7-450-2x.jpg 900w"
- 
-                                         media="(max-width:767px)"
-                                         sizes="(min-width:480px) 450px,100vw">
- 
+                                    media="(max-width:767px)" sizes="(min-width:480px) 450px,100vw">
+
                                 <source srcset="./images/Portfolio/Portfolio7-354.jpg 354w,
                                                 ./images/Portfolio/Portfolio7-354-2x.jpg 708w"
- 
-                                         media="(min-width:768px)"
-                                         sizes="(min-width:768px) 354px,100vw">
- 
+                                    media="(min-width:768px)" sizes="(min-width:768px) 354px,100vw">
+
                                 <source srcset="./images/Portfolio/Portfolio7-370.jpg 370w,
                                                 ./images/Portfolio/Portfolio7-370-2x.jpg 740w"
- 
-                                         media="(min-width:1200px)"
-                                         sizes="(min-width:1200px) 370px,100vw">
- 
-                                 <img src="./images/Portfolio/Portfolio7-354.jpg"
-                                         alt="альтернативный текст"/>
- 
-                             </picture>
- 
-                            
+                                    media="(min-width:1200px)" sizes="(min-width:1200px) 370px,100vw">
+
+                                <img src="./images/Portfolio/Portfolio7-354.jpg" alt="альтернативный текст" />
+
+                            </picture>
+
+
                             <h2 class="style-title">Издание Limited Edition</h2>
                             <p class="text-item">Дизайн</p>
                         </a>
@@ -432,28 +391,21 @@
 
                                 <source srcset="./images/Portfolio/Portfolio8-450.jpg 450w,
                                                 ./images/Portfolio/Portfolio8-450-2x.jpg 900w"
- 
-                                         media="(max-width:767px)"
-                                         sizes="(min-width:480px) 450px,100vw">
- 
+                                    media="(max-width:767px)" sizes="(min-width:480px) 450px,100vw">
+
                                 <source srcset="./images/Portfolio/Portfolio8-354.jpg 354w,
                                                 ./images/Portfolio/Portfolio8-354-2x.jpg 708w"
- 
-                                         media="(min-width:768px)"
-                                         sizes="(min-width:768px) 354px,100vw">
- 
+                                    media="(min-width:768px)" sizes="(min-width:768px) 354px,100vw">
+
                                 <source srcset="./images/Portfolio/Portfolio8-370.jpg 370w,
                                                 ./images/Portfolio/Portfolio8-370-2x.jpg 740w"
- 
-                                         media="(min-width:1200px)"
-                                         sizes="(min-width:1200px) 370px,100vw">
- 
-                                 <img src="./images/Portfolio/Portfolio8-354.jpg"
-                                         alt="альтернативный текст"/>
- 
-                             </picture>
- 
-                            
+                                    media="(min-width:1200px)" sizes="(min-width:1200px) 370px,100vw">
+
+                                <img src="./images/Portfolio/Portfolio8-354.jpg" alt="альтернативный текст" />
+
+                            </picture>
+
+
                             <h2 class="style-title">Проект LAB</h1>
                                 <p class="text-item">Маркетинг</p>
                         </a>
@@ -472,28 +424,21 @@
                                 </div>
                             </div>
 
-                           <picture>
+                            <picture>
 
-                               <source srcset="./images/Portfolio/Portfolio9-450.jpg 450w,
-                                               ./images/Portfolio/Portfolio9-450-2x.jpg 900w"
+                                <source srcset="./images/Portfolio/Portfolio9-450.jpg 450w,
+                                               ./images/Portfolio/Portfolio9-450-2x.jpg 900w" media="(max-width:767px)"
+                                    sizes="(min-width:480px) 450px,100vw">
 
-                                        media="(max-width:767px)"
-                                        sizes="(min-width:480px) 450px,100vw">
+                                <source srcset="./images/Portfolio/Portfolio9-354.jpg 354w,
+                                               ./images/Portfolio/Portfolio9-354-2x.jpg 708w" media="(min-width:768px)"
+                                    sizes="(min-width:768px) 354px,100vw">
 
-                               <source srcset="./images/Portfolio/Portfolio9-354.jpg 354w,
-                                               ./images/Portfolio/Portfolio9-354-2x.jpg 708w"
-
-                                        media="(min-width:768px)"
-                                        sizes="(min-width:768px) 354px,100vw">
-
-                               <source srcset="./images/Portfolio/Portfolio9-370.jpg 370w,
+                                <source srcset="./images/Portfolio/Portfolio9-370.jpg 370w,
                                                ./images/Portfolio/Portfolio9-370-2x.jpg 740w"
+                                    media="(min-width:1200px)" sizes="(min-width:1200px) 370px,100vw">
 
-                                        media="(min-width:1200px)"
-                                        sizes="(min-width:1200px) 370px,100vw">
-
-                                <img src="./images/Portfolio/Portfolio9-354.jpg"
-                                        alt="альтернативный текст"/>
+                                <img src="./images/Portfolio/Portfolio9-354.jpg" alt="альтернативный текст" />
 
                             </picture>
 
@@ -512,74 +457,74 @@
 
     </main>
 
-<!-- футер  -->
+    <!-- футер  -->
 
     <footer class="footer">
 
-       <div class="container footer-container">
-        <div class="adaptive-footer-conteiner" >
-            <div class="adress-container">
-                <a href="./" class="logo">Web<span class="logo-footer">Studio</span></a>
+        <div class="container footer-container">
+            <div class="adaptive-footer-conteiner">
+                <div class="adress-container">
+                    <a href="./" class="logo">Web<span class="logo-footer">Studio</span></a>
 
-                <p class="adress">г. Киев, пр-т Леси Украинки, 26</p>
+                    <p class="adress">г. Киев, пр-т Леси Украинки, 26</p>
 
-                <ul class="footer-adres_container">
+                    <ul class="footer-adres_container">
 
-                    <li class="adres-item">
+                        <li class="adres-item">
 
-                        <a href="mailto:info@devstudio.com" class="adres-link">info@example.com</a>
-                    </li>
-                    <li>
-                        <a href="tal:+380991111111" class="adres-link">+380991111111</a>
-                    </li>
-                </ul>
+                            <a href="mailto:info@devstudio.com" class="adres-link">info@example.com</a>
+                        </li>
+                        <li>
+                            <a href="tal:+380991111111" class="adres-link">+380991111111</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-socials-container">
+
+                    <h3 class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+
+                    <div class="footer-ikon">
+
+                        <a href="" class="footer-link_socials">
+                            <svg class="footer-icon_item" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                            </svg></a>
+
+                    </div>
+
+                    <div class="footer-ikon">
+
+                        <a href="" class="footer-link_socials">
+                            <svg class="footer-icon_item" width="20" height="16">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                            </svg></a>
+
+                    </div>
+
+                    <div class="footer-ikon">
+
+                        <a href="" class="footer-link_socials">
+                            <svg class="footer-icon_item" width="10" height="20">
+                                <use href="./images/symbol-defs.svg#icon-face"></use>
+                            </svg></a>
+
+                    </div>
+
+                    <div class="footer-ikon">
+
+                        <a href="" class="footer-link_socials">
+                            <svg class="footer-icon_item" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg></a>
+
+                    </div>
+
+
+
+                </div>
             </div>
-
-
-            <div class="footer-socials-container">
-
-                <h3 class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
-
-                <div class="footer-ikon">
-
-                    <a href="" class="footer-link_socials">
-                        <svg class="footer-icon_item" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                        </svg></a>
-
-                </div>
-
-                <div class="footer-ikon">
-
-                    <a href="" class="footer-link_socials">
-                        <svg class="footer-icon_item" width="20" height="16">
-                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                        </svg></a>
-
-                </div>
-
-                <div class="footer-ikon">
-
-                    <a href="" class="footer-link_socials">
-                        <svg class="footer-icon_item" width="10" height="20">
-                            <use href="./images/symbol-defs.svg#icon-face"></use>
-                        </svg></a>
-
-                </div>
-
-                <div class="footer-ikon">
-
-                    <a href="" class="footer-link_socials">
-                        <svg class="footer-icon_item" width="20" height="20">
-                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                        </svg></a>
-
-                </div>
-
-
-
-            </div>
-        </div>
             <div class="footer-form_container">
                 <form class="footer-form" for="join" action="">Подпишитесь на рассылку</form>
 
