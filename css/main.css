@@ -696,7 +696,7 @@ textarea {
   }
 }
 
-.auth-nav__link .auth-nav__link-icon {
+.auth-nav__link .auth-nav__icon {
   margin-right: 10px;
   fill: #757575;
   -webkit-transition-property: fill;
@@ -711,8 +711,8 @@ textarea {
   color: #2196F3;
 }
 
-.auth-nav__link:hover .icon-nav,
-.auth-nav__link:focus .icon-nav {
+.auth-nav__link:hover .auth-nav__icon,
+.auth-nav__link:focus .auth-nav__icon {
   fill: #2196F3;
 }
 
@@ -739,7 +739,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .main-hero {
     height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Hero-480.jpg");
@@ -747,7 +747,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 2dppx) {
   .main-hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Hero-480-2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Hero-480-2x.jpg");
@@ -1915,16 +1915,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .title-menu_function {
     padding-top: 52px;
-    padding-bottom: 52px;
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .title-menu_function {
-    padding-top: 66px;
-    padding-bottom: 65px;
+    padding-bottom: 53px;
     padding-left: 24px;
     padding-right: 24px;
   }

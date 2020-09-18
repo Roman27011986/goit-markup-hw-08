@@ -70,7 +70,7 @@
         line-height: 1.14;
     }
 
-    .auth-nav__link-icon {
+    .auth-nav__icon{
         
         margin-right: 10px;
         fill: $main-text-color;
@@ -78,6 +78,8 @@
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      
       }
 
       &:hover,
@@ -88,11 +90,13 @@
 
   } 
 
-      &:hover .icon-nav,
-      &:focus .icon-nav {
+    
+   }
+      
+  }
+      .auth-nav__link:hover .auth-nav__icon,
+     .auth-nav__link:focus .auth-nav__icon{
 
       fill: $hover-color;
 
     }
-   }
-  }
