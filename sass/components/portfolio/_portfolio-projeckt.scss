@@ -114,12 +114,5 @@
   padding-bottom: 20px;
   margin: 0;
 
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.87;
-  color: $main-text-color;
-
-  letter-spacing: 0.03em;
+  @include text(16px,1.87,0.03em);
 }

@@ -15,9 +15,9 @@
 
 // список "наших преимуществ"
 
-.advant-comp {
-  @extend %list;
+.about-us__list{
 
+  @extend %list;
   display: flex;
   flex-wrap: wrap;
   
@@ -35,7 +35,7 @@
 
 // элементы списка
 
-  .comp-item{
+  .about-us__item{
     
     @media screen and (min-width:768px) and (max-width:1199px){
       flex-basis:calc(50% - 30px);
@@ -46,7 +46,7 @@
       flex-basis:calc((100% - 30px * 3) / 4);
   }
 
-  & {
+  &{
     
     @media screen and (min-width:768px) and (max-width:1199px){
     margin:15px ;
@@ -68,7 +68,7 @@
 
 // контейнер с иконкой списка "наши преимущества"
 
-.icon-container {
+.about-us__icon-container {
 
   display:flex;
   justify-content: center;
@@ -81,9 +81,8 @@
 
  }
 
-  .section-title {
+  .about-us__title {
 
-  
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -97,13 +96,8 @@
   }
 } 
 
-.text {
+.about-us__text {
 
-  font-style: normal;
-  font-weight: normal;
-  color: var(--primari-text-color);
-  font-size: 14px;
-  line-height: 1.71;
-  margin: 0;
+  @include text(14px,1.71,0.03em);
  
 }

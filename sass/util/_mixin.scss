@@ -3,3 +3,15 @@
   color: $color;
  
 }
+
+@mixin text($size,$height,$spacing,$color) {
+    
+ font-family: Roboto;
+ font-style: normal;
+ font-weight: normal;
+ font-size:$size;
+ line-height:$height;
+ letter-spacing:$spacing;
+ color:$color;
+ 
+}

@@ -1,5 +1,5 @@
 .main-hero {
-  min-width: 320px;
+  
   @extend %flex;
   justify-content: center;
   align-items: center;
@@ -93,15 +93,15 @@
 
 // заголовок и кнопка в герое
 
-  .hero-item{
-    width: 320px;
+  .main-hero__item{
+    width: 360px;
     text-align: center;
 
     @media screen and (min-width:1200px){
-      width: 694px;
+      width: 696px;
     }
 
-    .hero-title {
+    .main-hero__title {
       color: #ffffff;
       font-weight: 900;
       font-size: 26px;
@@ -119,7 +119,7 @@
       }
     }
 
-    .service{
+    .main-hero__botton{
       font-family: Roboto;
       font-weight: bold;
       color: white;

@@ -104,18 +104,7 @@
     }
 
     
-    &__link--active{
-
-      @media screen and (max-width:767px){
-        padding-bottom: 8px;
-      }
-
-      @media screen and (min-width:768px){
-        padding-top: 32px;
-        padding-bottom: 29px;
-      }
-      
-    }
+  //  подчеркивание ссылок меню
 
     &__link--active::after {
       display: block;
@@ -137,6 +126,19 @@
     &__link--active:hover::after,
     &__link--active:focus::after {
       transform: scaleX(1);
+    }
+
+     &__link--active{
+
+      @media screen and (max-width:767px){
+        padding-bottom: 8px;
+      }
+
+      @media screen and (min-width:768px){
+        padding-top: 32px;
+        padding-bottom: 29px;
+      }
+      
     }
      
       .link {
