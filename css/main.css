@@ -1920,6 +1920,15 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .title-menu_function {
+    padding-top: 66px;
+    padding-bottom: 66px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
 .title-menu_item {
   margin: 0;
   font-family: Roboto;
