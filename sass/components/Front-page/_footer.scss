@@ -67,7 +67,7 @@
       .adress {
         margin-top: 20px;
         margin-bottom: 10px;
-
+         color: white;
          @include text(14px,1.71,0.03em);
       }
 
@@ -104,7 +104,6 @@
       
         padding: 0;
         font-family: Roboto;
-        font-style: normal;
         font-weight: bold;
         font-size: 14px;
         line-height: 1.14;
