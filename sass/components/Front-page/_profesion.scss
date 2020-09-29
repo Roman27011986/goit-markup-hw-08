@@ -3,7 +3,7 @@
     padding-bottom: 94px;
     padding-top: 94px;
 
-    .function-title {
+    .profesion__title {
         color: $title-color;
         text-align: center;
         font-weight: bold;
@@ -24,10 +24,10 @@
     @extend %list;
     @extend %flex;
 
-    .work-item {
+    .work-list__item {
         position: relative;
     
-        .work-container {
+        .work-list__container {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -40,13 +40,7 @@
       }
   }
 
-
-  
-
-  
-  
-
-  .work-content {
+  .work-list__content {
     margin: 0;
   
     padding: 0;
@@ -58,6 +52,6 @@
     color: #ffffff;
   }
 
-  .work-list .work-item + .work-item {
+  .work-list .work-list__item + .work-list__item {
     margin-left: 30px;
   }

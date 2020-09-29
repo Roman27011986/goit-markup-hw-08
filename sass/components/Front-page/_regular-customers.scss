@@ -7,7 +7,7 @@
     padding-bottom: 90px;
     }
 
-    .comand-title {
+    .client__title {
         text-align: center;
         color: $title-color;
         font-weight: bold;
@@ -17,13 +17,13 @@
         margin-top: 0;
       }
 
-      .client-container {
+      .client__list {
         @extend %list;
         margin: -15px;
         display: flex;
         flex-wrap: wrap;
 
-        .client-container_item{
+        .client__item{
           margin: 15px;
           width: calc(50% - 30px);
 
@@ -40,7 +40,7 @@
           }
           
 
-          .client-link {
+          .client__link {
             display: inline-flex;
             justify-content: center;
             align-items: center;
@@ -58,7 +58,7 @@
 
            
 
-            .client-svg {
+            .client__icon {
               fill: #afb1b8;
               transition-property: fill;
               transition-duration: 250ms;
@@ -69,7 +69,7 @@
               border-color: $hover-color;
             }
 
-            &:hover .client-svg {
+            &:hover .client__icon {
               fill: $hover-color;
             }
         }
