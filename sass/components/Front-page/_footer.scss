@@ -144,7 +144,7 @@
           transition-duration: 250ms;
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-          .footer-icon_item {
+          .footer__icon--white {
             fill: #ffffff;
           }
 
@@ -155,14 +155,9 @@
       }
 
 
-      .footer-ikon + .footer-ikon {
+      .footer__ikon + .footer__ikon {
           margin-left: 4px;
       }
-
-      
-
-     
-         
-      }
+    }
 
       

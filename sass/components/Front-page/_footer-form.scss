@@ -1,4 +1,4 @@
-.footer-form_container{
+.footer-form__container{
   display: flex;
   flex-wrap: wrap;
 
@@ -41,7 +41,7 @@
       
       }
 
-      .footer-input {
+      .footer-form__input {
         
         margin-bottom: 20px ;
         padding: 13px 16px;
@@ -64,7 +64,7 @@
         }
 
        
-        .footer-button{
+        .footer-form__button{
           @extend %button;
           display: inline-flex;
           align-items: center;
@@ -76,7 +76,7 @@
           }
           
       
-          .form-button_icon {
+          .footer-form__button--icon {
               content:"";
               width: 24px;
               height: 24px;

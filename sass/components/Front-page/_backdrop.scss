@@ -64,7 +64,7 @@
         }
 
       
-      .close {
+      .modal__btn-close{
             display: flex;
             align-items: center;
             justify-content: center;
@@ -80,25 +80,22 @@
             top: 0;
             right: 0;
 
-            .close-icon{
+            .modal__btn-icon{
                 
                 transition-duration: 250ms;
                 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-                &:hover {
+                }
+
+                .modal__btn-icon:hover {
                 fill: $hover-color;
                     
                   }
-              }
-           
+              
           }
 
-          .form {
-            
-            width: 100%;
-            
-
-            .form-title{
+          
+             .modal-form__title{
 
               font-family: Roboto;
               font-weight: bold;
@@ -116,7 +113,7 @@
               
               }
 
-              .label {
+              .modal-form__label {
                 display: block;
                 margin-bottom: 4px;
                 font-family: Roboto;
@@ -126,13 +123,14 @@
                 color: $main-text-color;
               
               }
-              .form-label {
+
+              .modal-form__input--flex {
                 display: flex;
                 position: relative;
                 margin-bottom: 10px;
-                position: relative;
+                
 
-                .form-input {
+                .modal-form__input {
                     width: 100%;
                     padding-top: 8px;
                     padding-bottom: 8px;
@@ -146,12 +144,12 @@
                         border-color: $hover-color;
                       }
 
-                      &:focus + .form-icon {
+                      &:focus + .modal-form__icon {
                         fill: $hover-color;
                       }
                   }
 
-                  .form-icon {
+                  .modal-form__icon {
                     position: absolute;
                     top: 50%;
                     left: 15px;
@@ -227,7 +225,7 @@
                   }
                 
               }
-          }
+          
       }
       
     
