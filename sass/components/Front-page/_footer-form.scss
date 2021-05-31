@@ -1,85 +1,72 @@
-.footer-form__container{
+.footer-form__container {
   display: flex;
   flex-wrap: wrap;
-  @media screen and (min-width:768px) and (max-width:1199px){
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     justify-content: center;
     width: 570px;
   }
-    @media screen and (max-width:1199px){
-      justify-content: center;
-    }
-    @media screen and (min-width:1200px){
-      width: 570px;
-    }
-    
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+  }
+}
+
+.footer-form {
+  font-family: Roboto;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+.footer-form__input {
+  margin-bottom: 20px;
+  padding: 13px 16px;
+  color: #fff;
+  background-color: #2f303a;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+}
+
+.footer-form__button {
+  @extend %button;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 29px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 10px;
   }
 
-  .footer-form {
-    
-    font-family: Roboto;
-    font-weight: bold;
-    margin-bottom: 20px;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    
-    color: #FFFFFF;
+  .footer-form__button--icon {
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
 
-    @media screen and (max-width:1199px){
-      text-align: center;
-    }
-      
-      }
-
-      .footer-form__input {
-        
-        margin-bottom: 20px ;
-        padding: 13px 16px;
-        color:#fff;
-        background-color: #2F303A;
-        outline: 0;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        box-sizing: border-box;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        border-radius: 4px;
-        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-          
-        @media screen and (min-width:480px){
-          width: 450px;
-          margin-bottom: 20px ;
-        }
-        @media screen and (min-width:1200px){
-          width: 358px;
-        }
-        }
-
-       
-        .footer-form__button{
-          @extend %button;
-          display: inline-flex;
-          align-items: center;
-          padding-left: 29px;
-
-          @media screen and (min-width:1200px){
-           
-            margin-left: 10px;
-          }
-          
-      
-          .footer-form__button--icon {
-              content:"";
-              width: 24px;
-              height: 24px;
-              margin-left: 12px;
-              
-              background-repeat: no-repeat;
-              background-image: url(../images/send.svg);
-            }
-          
-        } 
-        
-
-      
-
-
+    background-repeat: no-repeat;
+    background-image: url(../images/send.svg);
+  }
+}

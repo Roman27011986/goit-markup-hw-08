@@ -1,21 +1,17 @@
 @mixin logo($color) {
-    
   color: $color;
- 
 }
 
-@mixin text($size,$height,$spacing) {
-    
- font-family: Roboto;
- font-style: normal;
- font-weight: normal;
- font-size:$size;
- line-height:$height;
- letter-spacing:$spacing;
-
+@mixin text($size, $height, $spacing) {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $spacing;
 }
 
-.visuallly-hidden{
+.visuallly-hidden {
   position: absolute;
   width: 1px;
   height: 1px;

@@ -1,103 +1,88 @@
 .main-hero {
-  
   @extend %flex;
   justify-content: center;
   align-items: center;
-  
   height: 600px;
-
   background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/Hero-1600.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: chocolate;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-  url('../images/Hero-1600.jpg');
-  background-position: center;
-  background-size:cover;
-  background-color: chocolate;
+      url("../images/Hero-1600-2x.jpg");
+  }
 
-  @media screen and (min-device-pixel-ratio: 2),
-  screen and (-webkit-min-device-pixel-ratio: 2),
-  screen and (-o-min-device-pixel-ratio: 2/1),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-   
+  // герой мобилка
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    height: 400px;
     background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-    
-     url('../images/Hero-1600-2x.jpg');
-  
-}
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/Hero-480.jpg");
 
-// герой мобилка
-
-    @media screen  and (min-width:320px) and (max-width:767px){ 
-    
-      height: 400px;
-
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-    
-    url('../images/Hero-480.jpg');
-
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (-webkit-min-device-pixel-ratio: 2),
-    screen and (-o-min-device-pixel-ratio: 2/1),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-   
-    background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-    
-     url('../images/Hero-480-2x.jpg');
-  
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/Hero-480-2x.jpg");
     }
   }
 
-// герой таблетка
+  // герой таблетка
 
-    @media screen  and (min-width:768px) and (max-width:1199px){
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 400px;
 
-     height: 400px;
-
-     background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-    
-    url('../images/Hero-768.jpg');
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/Hero-768.jpg");
 
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (-webkit-min-device-pixel-ratio: 2),
-    screen and (-o-min-device-pixel-ratio: 2/1),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-   
-    background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-    
-     url('../images/Hero-768-2x.jpg');
-  
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/Hero-768-2x.jpg");
     }
   }
 
+  // заголовок и кнопка в герое
 
-
-// заголовок и кнопка в герое
-
-  .main-hero__item{
+  .main-hero__item {
     width: 360px;
     text-align: center;
 
-    @media screen and (min-width:1200px){
+    @media screen and (min-width: 1200px) {
       width: 696px;
     }
 
@@ -108,18 +93,18 @@
       line-height: 1.61;
       margin-top: 0;
       margin-bottom: 30px;
-    
+
       letter-spacing: 0.06em;
       text-transform: uppercase;
 
-      @media screen and (min-width:1200px){
+      @media screen and (min-width: 1200px) {
         font-size: 44px;
         line-height: 1.36;
         margin-bottom: 20px;
       }
     }
 
-    .main-hero__botton{
+    .main-hero__botton {
       font-family: Roboto;
       font-weight: bold;
       color: white;
@@ -136,5 +121,5 @@
 
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
-   }
   }
+}
