@@ -1,77 +1,62 @@
-
-
 .button-container {
   display: flex;
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
-  
 
-  @media screen and (max-width:767px){
-    
+  @media screen and (max-width: 767px) {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 60px;
     padding-bottom: 40px;
   }
 
-  @media screen and (min-width:768px) and (max-width:1199px){
-  padding-top: 60px;
-  padding-bottom: 30px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 30px;
   }
-  @media screen and (min-width:1200px){
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 50px;
-    }
-  .button-list{
-  @extend %list;
-
-        .portfolio-button {
-
-          border-radius: 4px;
-          border: 1px solid transparent;
-          display: inline-block;
-
-           &:nth-child(-n + 3){
-             @media screen and (max-width:767px){
-              margin-bottom: 15px;
-              
-            }
-          }
-
-          .item {
-
-              font-family: Roboto;
-              font-weight: 500;
-              font-size: 16px;
-              line-height: 1.62;
-              letter-spacing: 0.03em;
-            
-              color: $title-color;
-              background: #f5f4fa;
-              border-radius: 4px;
-              border: 1px solid transparent;
-              padding: 6px 22px;
-            
-              transition-property: color, background-color;
-              transition-duration: 250ms;
-              transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-              &:hover {
-
-                  color: #ffffff;
-                  background-color:$hover-color;
-                  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-                    0px 2px 2px rgba(0, 0, 0, 0.12);
-                  border-radius: 4px;
-                }
-            }
-
-          }
-
-      }
-        
   }
+  .button-list {
+    @extend %list;
 
+    .portfolio-button {
+      border-radius: 4px;
+      border: 1px solid transparent;
+      display: inline-block;
 
-  
+      &:nth-child(-n + 3) {
+        @media screen and (max-width: 767px) {
+          margin-bottom: 15px;
+        }
+      }
+
+      .item {
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        letter-spacing: 0.03em;
+        color: $title-color;
+        background: #f5f4fa;
+        border-radius: 4px;
+        border: 1px solid transparent;
+        padding: 6px 22px;
+
+        transition-property: color, background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+          color: #ffffff;
+          background-color: $hover-color;
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}

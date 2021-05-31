@@ -1,41 +1,24 @@
 .main-container {
-    font-family: Roboto, Calibri;
-    letter-spacing: 0.03em;
-    margin: 0 auto;
-    padding: 0;
-
-    
-
-    .portfolio-header {
-      border-bottom: 1px solid #ececec;
-    } 
-
-img{
-
+  font-family: Roboto, Calibri;
+  letter-spacing: 0.03em;
+  margin: 0 auto;
+  padding: 0;
+  .portfolio-header {
+    border-bottom: 1px solid #ececec;
+  }
+  img {
     @extend %img-block;
-    
- }
-
-
- textarea {
+  }
+  textarea {
     resize: none;
   }
-
-  .portfolio-link{
+  .portfolio-link {
     @extend %link-stile-none;
   }
-
-  .link-nav{
+  .link-nav {
     @extend %link-stile-none;
   }
-
-  .auth-nav .link{
+  .auth-nav .link {
     @extend %link-stile-none;
   }
-
-  
-
 }
-
-
-

@@ -1,103 +1,78 @@
 // паддинги для секции "наши преимущества"
 
-.about-us{
-    
-    @media screen and (max-width:1199px){
-      padding-top: 60px;
-      padding-bottom: 60px;
-    
-    }
-    @media screen and (min-width:1200px){
-      padding-top: 94px;
-      
-    }
+.about-us {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 }
 
 // список "наших преимуществ"
 
-.about-us__list{
-
+.about-us__list {
   @extend %list;
   display: flex;
   flex-wrap: wrap;
-  
-  @media screen and (min-width:768px) and (max-width:1199px){
-    
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin: -15px;
   }
-
-  @media screen and (min-width:1200px){
-
+  @media screen and (min-width: 1200px) {
     justify-content: space-between;
   }
-
 }
 
 // элементы списка
 
-  .about-us__item{
-    
-    @media screen and (min-width:768px) and (max-width:1199px){
-      flex-basis:calc(50% - 30px);
-    
+.about-us__item {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc(50% - 30px);
   }
-
-    @media screen and (min-width:1200px){
-      flex-basis:calc((100% - 30px * 3) / 4);
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 30px * 3) / 4);
   }
-
-  &{
-    
-    @media screen and (min-width:768px) and (max-width:1199px){
-    margin:15px ;
+  & {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin: 15px;
+    }
   }
-}
-
-   
-
-  &:nth-child(-n + 3){
-
-    @media screen and (max-width:767px){
-      
+  &:nth-child(-n + 3) {
+    @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }
-    
   }
-
 }
 
 // контейнер с иконкой списка "наши преимущества"
 
 .about-us__icon-container {
-
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  
+
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
+}
 
- }
-
-  .about-us__title {
-
+.about-us__title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  color:$title-color;
+  color: $title-color;
   margin-bottom: 10px;
   margin-top: 0;
   padding: 0;
 
-  @media screen and (max-width:767px){
+  @media screen and (max-width: 767px) {
     text-align: center;
   }
-} 
+}
 
 .about-us__text {
-  color:$main-text-color ;
-  @include text(14px,1.71,0.03em);
- 
+  color: $main-text-color;
+  @include text(14px, 1.71, 0.03em);
 }
